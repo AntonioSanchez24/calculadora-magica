@@ -1,37 +1,52 @@
 package calculadora;
+
 import java.util.Scanner;
+
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int magicnumber = 2; /*¿Cual era la canción del final de Spider-Man No Way Home? cual es el magic number?*/
-		System.out.println("Selecciona opción.");
+		int magicnumber = 3; /*
+								 * Â¿Cual era la canciÃ³n del final de Spider-Man No Way Home? cual es el magic
+								 * number?
+								 */
+		System.out.println("Selecciona opciï¿½n.");
 		System.out.println("1) Sumar.");
 		System.out.println("2) Restar.");
 		System.out.println("3) Dividir.");
 		System.out.println("4) Multiplicar.");
-		int eleccion = sc.nextInt(); 
-		switch(eleccion) {
-		case 1:
-			int numero1 = sc.nextInt();
-			int numero2 = sc.nextInt(); /*David, añade mensajes del estilo "Inserte número tal" con el sysout.*/
-			System.out.println("La suma de " + numero1 + " y " + numero2 + " es " + magicnumber + ", tachán!");
-			break;
-		case 2:
-			int numero1r = sc.nextInt();
-			int numero2r = sc.nextInt(); /*David, añade mensajes del estilo "Inserte número tal" con el sysout.*/
-			System.out.println("La resta de " + numero1r + " y " + numero2r + " es " + magicnumber + ", tachán!");
-			break;
-		case 3:
-			int numero1m = sc.nextInt();
-			int numero2m = sc.nextInt(); /*David, añade mensajes del estilo "Inserte número tal" con el sysout.*/
-			System.out.println("La división de " + numero1m + " y " + numero2m + " es " + magicnumber + ", tachán!");
-		case 4:
-			int numero1d = sc.nextInt();
-			int numero2d = sc.nextInt(); /*David, añade mensajes del estilo "Inserte número tal" con el sysout.*/
-			System.out.println("La multiplicación de " + numero1d + " y " + numero2d + " es " + magicnumber + ", tachán!");
-			break;
-		default: 
-			System.out.println("Elige opción válida");
+		int eleccion = sc.nextInt();
+		switch (eleccion) {
+			case 1:
+				System.out.print("Inserta el primer nÃºmero:");
+				int numero1 = sc.nextInt();
+				System.out.print("Inserta el segundo nÃºmero:");
+				int numero2 = sc.nextInt(); /* David, aï¿½ade mensajes del estilo "Inserte nï¿½mero tal" con el sysout. */
+				System.out.println("La suma de " + numero1 + " y " + numero2 + " es " + magicnumber + ", tachï¿½n!");
+				break;
+			case 2:
+				System.out.print("Inserta el primer nÃºmero:");
+				int numero1r = sc.nextInt();
+				System.out.print("Inserta el segundo nÃºmero:");
+				int numero2r = sc.nextInt(); /* David, aï¿½ade mensajes del estilo "Inserte nï¿½mero tal" con el sysout. */
+				System.out.println("La resta de " + numero1r + " y " + numero2r + " es " + magicnumber + ", tachï¿½n!");
+				break;
+			case 3:
+				System.out.print("Inserta el primer nÃºmero:");
+				int numero1m = sc.nextInt();
+				System.out.print("Inserta el segundo nÃºmero:");
+				int numero2m = sc.nextInt(); /* David, aÃ±ade mensajes del estilo "Inserte nï¿½mero tal" con el sysout. */
+				System.out
+						.println("La divisiï¿½n de " + numero1m + " y " + numero2m + " es " + magicnumber + ", tachï¿½n!");
+			case 4:
+				System.out.print("Inserta el primer nÃºmero:");
+				int numero1d = sc.nextInt();
+				System.out.print("Inserta el segundo nÃºmero:");
+				int numero2d = sc.nextInt(); /* David, aï¿½ade mensajes del estilo "Inserte nï¿½mero tal" con el sysout. */
+				System.out.println(
+						"La multiplicaciÃ³n de " + numero1d + " y " + numero2d + " es " + magicnumber + ", tachï¿½n!");
+				break;
+			default:
+				System.out.println("Elige una opciÃ³n vÃ¡lida");
 		}
 	}
 }
