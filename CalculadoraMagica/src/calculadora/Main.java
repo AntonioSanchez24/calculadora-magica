@@ -25,8 +25,9 @@ public class Main {
 				int numero1r = sc.nextInt();
 				System.out.print("Inserta el segundo número:");
 				int numero2r = sc.nextInt(); /* David, a ade mensajes del estilo "Inserte n mero tal" con el sysout. */
-				System.out.println("La resta de " + numero1r + " y " + numero2r + " es " + (numero1r + numero2r) + ", tachán!");
+				System.out.println("La resta de " + numero1r + " y " + numero2r + " es " + (numero1r - numero2r) + ", tachán!");
 				/*Uy, esto no resta, sino que suma, ¿podrías arreglarlo, David?*/
+				/*David: paso, hazlo tu*/
 				break;
 			case 3:
 				System.out.print("Inserta el primer número:");
